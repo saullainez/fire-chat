@@ -16,7 +16,6 @@ export class ChatService {
 
   constructor(private afs: AngularFirestore, public afAuth: AngularFireAuth) {
     this.afAuth.authState.subscribe( user => {
-      console.log('Estado del usuario', user);
       if(!user){return;}
 
       this.usuario.nombre = user.displayName;
@@ -25,10 +24,16 @@ export class ChatService {
   }
 
   login(proveedor:string) {
-    this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    if(proveedor === 'google'){
+      this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    }else{
+      this.afAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+    }
+    
   }
 
   logout() {
+    this.usuario = {};
     this.afAuth.signOut();
   }
 
