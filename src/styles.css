@@ -31,6 +31,36 @@
   margin-right: 5px;;
 }
 
+.google{
+  background-color: #dd4b39;
+  border-color: rgba(0,0,0,0.2);
+}
+
+.facebook{
+  background-color: #3b5998;
+  border-color: rgba(0,0,0,0.2);
+}
+
+.github{
+  background-color: #444;
+  border-color: rgba(0,0,0,0.2);
+}
+
+.float{
+	width:55px;
+	height:55px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:2px;
+  font-size: 23px;
+}
 
 /* Animaciones */
 .animated {
