@@ -16,6 +16,7 @@ export class ChatService {
 
   constructor(private afs: AngularFirestore, public afAuth: AngularFireAuth) {
     this.afAuth.authState.subscribe( user => {
+      console.log('Estado del usuario', user);
       if(!user){return;}
 
       this.usuario.nombre = user.displayName;
@@ -51,9 +52,10 @@ export class ChatService {
   agregarMensaje(texto:string){
     //TODO falta el uid del usuario
     let mensaje: Mensaje = {
-      nombre: 'Demo',
+      nombre: this.usuario.nombre,
       mensaje: texto,
-      fecha: new Date().getTime()
+      fecha: new Date().getTime(),
+      uid: this.usuario.uid
     }
 
     return this.itemsCollection.add(mensaje);
