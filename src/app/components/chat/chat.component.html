@@ -3,6 +3,7 @@
 <div class="app-mensajes" id="app-mensajes">
     <div *ngFor="let chat of chatService.chats"
           [ngClass]="{'text-right': chatService.usuario.uid == chat.uid}">
+        <img [ngClass]="{'img-circle img-thumbnail mr-5': chat.photoURL}" [src]="chat.photoURL" alt="">
         <span class="badge" [ngClass]="{'bg-primary': chatService.usuario.uid == chat.uid,
                         'bg-success': chatService.usuario.uid != chat.uid}">{{chat.nombre}}</span>
         <p>{{chat.mensaje}}</p>
