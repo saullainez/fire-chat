@@ -25,10 +25,18 @@ export class ChatService {
   }
 
   login(proveedor:string) {
-    if(proveedor === 'google'){
-      this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-    }else{
-      this.afAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+    switch (proveedor){
+      case 'google':
+        this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+        break;
+      case 'facebook':
+        this.afAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+        break;
+      case 'github':
+        this.afAuth.signInWithPopup(new firebase.auth.GithubAuthProvider);
+        break;
+      default: 
+        return
     }
     
   }
