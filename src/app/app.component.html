@@ -1,7 +1,14 @@
+<!--<div class="header">
+  <div class="row">
+    <div class="col-12">
+      <img class="img" src="../assets/img/charla.png" alt="">
+    </div>
+    <div class="col-12">
+      <span class="master">Master</span><span class="chat">Chat</span>
+    </div>
+  </div>
+</div>
 <div class="container main-container">
-  <h1 class="text-center">Chat Maestro</h1>
-  <hr>
-
   <div class="col-md-12 text-right" *ngIf="chatService.usuario.uid">
     <button class="btn btn-outline-danger" (click)="chatService.logout()">Salir</button>
   </div>
@@ -9,5 +16,22 @@
 
   <div class="chat-window" *ngIf="chatService.usuario.uid">
     <app-chat></app-chat>
+  </div>
+</div>-->
+<div class="container main-container">
+  <div class="row login-container">
+    <div class="col-6 title-container">
+      <div class="row">
+        <div class="col-12">
+          <img class="img" src="../assets/img/chat.png" alt="">
+        </div>
+        <div class="col-12">
+          <span class="master">Master</span><span class="chat">Chat</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 social-container">
+      <app-login *ngIf="!chatService.usuario.uid"></app-login>
+    </div>
   </div>
 </div>

@@ -1,6 +1,8 @@
 .main-container{
   margin-top: 40px;
   margin-bottom: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .puntero{
@@ -26,6 +28,22 @@
   /*background:gray;*/
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.header{
+  background: #1f6f8b;;
+  height: 535px;
+  padding-top: 109px;
+  text-align: center;
+  border-radius:0 0 350px 350px;
+}
+
+.img{
+  width:245px;
+}
+
+.side {
+  display:inline-block;
 }
 
 .mr-5{
@@ -57,7 +75,7 @@
 }
 
 .float{
-	width:55px;
+	width:310px;
 	height:55px;
 	bottom:40px;
 	right:40px;
@@ -67,10 +85,75 @@
 	box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-	margin-top:2px;
-  font-size: 23px;
+.btn{
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 15px 0;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 20px;
+  text-decoration: none;
+  color:#FFF;
+	border-radius:50px;
+  box-shadow: 2px 2px 3px #999;
+  text-align: left;
 }
+
+.btn:hover{
+  color:#FFF;
+}
+
+.my-float{
+  font-size: 23px;
+  margin-left: 8px;
+  margin-right: 10px;
+
+}
+
+.login-text{
+  font-family: helvetica;
+  font-size: 30px;
+  margin-bottom: 25px
+}
+
+body{
+  background: black;
+}
+
+.social-container{
+  background: #f7f9fb;
+  padding-top: 55px;
+  border-radius: 0px 0px 15px 0px;
+}
+
+.master{
+  font-family: Helvetica;
+  font-size: 90px;
+  color: white;
+}
+
+.chat{
+  font-family: Helvetica;
+  font-size: 70px;
+  color:white;
+}
+
+.login-container{
+  text-align: center;
+  background: #222222c9;
+  border-radius: 15px 0px 15px 0px;
+  height: 450px;
+  margin-top: 230px;
+}
+
+.title-container{
+  background: #062b3b;
+  padding-top: 50px;
+  border-radius: 15px 0px 0px 0px;
+}
+
 
 /* Animaciones */
 .animated {
