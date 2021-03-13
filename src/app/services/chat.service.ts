@@ -67,4 +67,8 @@ export class ChatService {
 
     return this.itemsCollection.add(mensaje);
   }
+
+  getUserInfo(){
+    return this.usuario;
+  }
 }

@@ -1,8 +1,7 @@
 .main-container{
   margin-top: 40px;
   margin-bottom: 150px;
-  padding-left: 200px;
-  padding-right: 200px;
+
 }
 
 .puntero{
@@ -13,20 +12,20 @@
   text-align: right;
 }
 .chat-window{
-  margin-top: 15px;
-  padding: 10px;
-  width: 308px;
-  height: 650px;
+  width: 100%;
+  height: 900px;
   overflow: hidden;
-  border: 1px solid #4080FF;
   border-radius: 20px;
 }
-
+.center{
+  padding-left: 200px;
+  padding-right: 200px;
+}
 .app-mensajes{
   overflow-y:scroll;
-  height: 500px;;
-  /*background:gray;*/
-  padding: 5px;
+  height: 775px;;
+  background:#eef5f9;
+  padding: 15px;
   margin-bottom: 10px;
 }
 
@@ -52,7 +51,12 @@
 
 .img-circle {
   border-radius: 100%;
-  width: 30px;
+  width: 35px;
+}
+
+.img-circle-profile {
+  border-radius: 100%;
+  width: 50px;
 }
 
 .img-thumbnail {
@@ -62,6 +66,14 @@
 .google{
   background-color: #dd4b39;
   border-color: rgba(0,0,0,0.2);
+}
+
+.navbar-brand{
+  margin-left: 10px !important;
+}
+
+.navbar{
+  padding-right: 15px !important;
 }
 
 .facebook{
@@ -85,7 +97,7 @@
 	box-shadow: 2px 2px 3px #999;
 }
 
-.btn{
+.btn-social{
   width: 70%;
   padding: 12px;
   border: none;
@@ -101,7 +113,7 @@
   text-align: left;
 }
 
-.btn:hover{
+.btn-social:hover{
   color:#FFF;
 }
 
@@ -132,6 +144,10 @@ body{
   font-family: Helvetica;
   font-size: 90px;
   color: white;
+}
+
+.container{
+  max-width: 100% !important;
 }
 
 .chat{
