@@ -1,7 +1,6 @@
 .main-container{
-  margin-top: 40px;
-  margin-bottom: 150px;
-
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .puntero{
@@ -38,7 +37,7 @@
 }
 
 .img{
-  width:245px;
+  width:46%;
 }
 
 .side {
@@ -98,14 +97,14 @@
 }
 
 .btn-social{
-  width: 70%;
+  width: 34vw;
   padding: 12px;
   border: none;
   border-radius: 4px;
   margin: 15px 0;
   display: inline-block;
-  font-size: 25px;
-  line-height: 20px;
+  font-size: 2vw;
+  line-height: 2.5vw;
   text-decoration: none;
   color:#FFF;
 	border-radius:50px;
@@ -118,16 +117,16 @@
 }
 
 .my-float{
-  font-size: 23px;
-  margin-left: 8px;
-  margin-right: 10px;
+  font-size: 2vw;
+  margin-left: 1vw;
+  margin-right: 2vw;
 
 }
 
 .login-text{
-  font-family: helvetica;
-  font-size: 30px;
-  margin-bottom: 25px
+  font-family: Helvetica;
+  font-size: 3vw;
+  margin-bottom: 25px;
 }
 
 body{
@@ -136,13 +135,13 @@ body{
 
 .social-container{
   background: #f7f9fb;
-  padding-top: 55px;
+  padding-top: 2vw;
   border-radius: 0px 0px 15px 0px;
 }
 
 .master{
   font-family: Helvetica;
-  font-size: 90px;
+  font-size: 7vw;
   color: white;
 }
 
@@ -152,7 +151,7 @@ body{
 
 .chat{
   font-family: Helvetica;
-  font-size: 70px;
+  font-size: 6vw;
   color:white;
 }
 
@@ -161,7 +160,7 @@ body{
   background: #222222c9;
   border-radius: 15px 0px 15px 0px;
   height: 450px;
-  margin-top: 230px;
+  margin-top: 9vw;
 }
 
 .title-container{
@@ -198,4 +197,47 @@ body{
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+@media only screen and (max-width: 800px) {
+  .login-container{
+    margin-top: 28vw;
+  }
+
+  .center{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .img{
+    width: 30%;
+  }
+
+  .master{
+    font-size: 10vw;
+  }
+
+  .chat{
+    font-size: 8vw;
+  }
+
+  .social-container {
+    padding-top: 2vw;
+  }
+
+  .login-text {
+    font-size: 7vw;
+    margin-bottom: 0vw;
+  }
+
+  .btn-social {
+      width: 85vw;
+      font-size: 6vw;;
+  }
+
+  .my-float {
+    font-size: 5vw;
+    margin-left: 2vw;
+    margin-right: 4vw;
+  }
 }
