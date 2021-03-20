@@ -201,7 +201,7 @@ body{
 
 @media only screen and (max-width: 800px) {
   .login-container{
-    margin-top: 28vw;
+    margin-top: 2vw;
   }
 
   .center{
@@ -240,4 +240,9 @@ body{
     margin-left: 2vw;
     margin-right: 4vw;
   }
+
+  .main-container {
+    margin-top: 2vw;
+    margin-bottom: 20px;
+}
 }
